@@ -17,7 +17,7 @@ The word vectors are in the zipped file `words.zip`. Each file is a word vector 
 * Xiaoyun Li and Ping Li. [C-MinHash: Improving Minwise Hashing with Circulant Permutation](https://proceedings.mlr.press/v162/li22m/li22m.pdf). ICML 2022.
 
 # References for Conditional Random Sampling (CRS) 
-* Ping Li Thesis. [Stable random projections and conditional random sampling, two sampling techniques for modern massive datasets](https://hastie.su.domains/THESES/pingli_thesis.pdf)). 2007.
+* Ping Li' PhD Thesis. [Stable random projections and conditional random sampling, two sampling techniques for modern massive datasets](https://hastie.su.domains/THESES/pingli_thesis.pdf)). Department of Statistics, Stanford University, 2007.
 * Ping Li, Kenneth Church, Trevor Hastie. [One Sketch For All: Theory and Application of Conditional Random Sampling](https://proceedings.neurips.cc/paper/2008/file/fe7ee8fc1959cc7214fa21c4840dff0a-Paper.pdf). NIPS 2008.
 * Ping Li, Kenneth Church. [A Sketch Algorithm for Estimating Two-Way and Multi-Way Associations](https://direct.mit.edu/coli/article/33/3/305/1955/A-Sketch-Algorithm-for-Estimating-Two-Way-and). Computational Linguistics 2007.
 * Ping Li, Kenneth Church, Trevor Hastie. [Conditional Random Sampling: A Sketch-based Sampling Technique for Sparse Data](https://proceedings.neurips.cc/paper/2006/file/aa6b7ad9d68bf3443c35d23de844463b-Paper.pdf). NIPS 2006.
