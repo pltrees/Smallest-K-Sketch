@@ -1,4 +1,6 @@
-# Conditional Random Sampling (CRS), a.k.a. Smallest-K Sketch (The work in 2005) 
+# Conditional Random Sampling (CRS), a.k.a. Smallest-K Sketch 
+
+This line of work was started in 2004 at Microsoft Research. 
 
 For sparse data, the inverted index is routinely used. To improve efficiency and storage, we directly sample the front of each inverted index vector, hence the name "Small-K Sketch" although the "K" does not need to be the same for each vector. In the estimation stage, for any pair (or any group) of sketches, we can retrospectively construct a uniform random sample for that pair (or group). With a random sample, one can use it to compute any similarities and summary statistics. Therefore, it is a "one-sketch-for-all" scheme. 
 
@@ -14,10 +16,9 @@ The word vectors are in the zipped file `words.zip`. Each file is a word vector 
 ## Recent Papers which used this dataset
 * Xiaoyun Li and Ping Li. [C-MinHash: Improving Minwise Hashing with Circulant Permutation](https://proceedings.mlr.press/v162/li22m/li22m.pdf). ICML 2022.
 
-# References for Conditional Random Sampling (CRS), a.k.a. Smallest-K Sketch 
-* Ping Li, Kenneth Church, and Trevor Hastie. [One Sketch For All: Theory and Application of Conditional Random Sampling](https://proceedings.neurips.cc/paper/2008/file/fe7ee8fc1959cc7214fa21c4840dff0a-Paper.pdf). NIPS 2008.
-* Ping Li and Kenneth Church. [A Sketch Algorithm for Estimating Two-Way and Multi-Way Associations](https://direct.mit.edu/coli/article/33/3/305/1955/A-Sketch-Algorithm-for-Estimating-Two-Way-and). Computational Linguistics 2007.
-* Ping Li, Kenneth Church, and Trevor Hastie. [Conditional Random Sampling: A Sketch-based Sampling Technique for Sparse Data](https://proceedings.neurips.cc/paper/2006/file/aa6b7ad9d68bf3443c35d23de844463b-Paper.pdf). NIPS 2006.
-* Ping Li and Kenneth Church. [Using Sketches to Estimate Associations](https://aclanthology.org/H05-1089.pdf). EMNLP 2005.
-
-
+# References for Conditional Random Sampling (CRS) 
+* Ping Li Thesis. [Stable random projections and conditional random sampling, two sampling techniques for modern massive datasets](https://hastie.su.domains/THESES/pingli_thesis.pdf)). 2007.
+* Ping Li, Kenneth Church, Trevor Hastie. [One Sketch For All: Theory and Application of Conditional Random Sampling](https://proceedings.neurips.cc/paper/2008/file/fe7ee8fc1959cc7214fa21c4840dff0a-Paper.pdf). NIPS 2008.
+* Ping Li, Kenneth Church. [A Sketch Algorithm for Estimating Two-Way and Multi-Way Associations](https://direct.mit.edu/coli/article/33/3/305/1955/A-Sketch-Algorithm-for-Estimating-Two-Way-and). Computational Linguistics 2007.
+* Ping Li, Kenneth Church, Trevor Hastie. [Conditional Random Sampling: A Sketch-based Sampling Technique for Sparse Data](https://proceedings.neurips.cc/paper/2006/file/aa6b7ad9d68bf3443c35d23de844463b-Paper.pdf). NIPS 2006.
+* Ping Li, Kenneth Church. [Using Sketches to Estimate Associations](https://aclanthology.org/H05-1089.pdf). EMNLP 2005.
