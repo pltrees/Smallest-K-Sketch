@@ -6,14 +6,14 @@ For sparse data, the inverted index is routinely used. To improve efficiency and
 
 The drawback of this scheme is that the sample size differs for each pair (group) and hence it can not be used for directly building large-scale learning models and hash tables for sub-linear time approximate near neighbor search. On the other hand, there are plenty applications which can benefit from this method, for example, computing similarities within HNSW or during the re-ranking stage of ANN methods. 
 
-## The sampling procedure
+## The sampling procedure (images from the NIPS 2006 paper) 
 
 <img src="img/NIPS2006.png" width="800"/> 
 
 
 ## The quadratic estimation formula (approximate MLE) for binary data
 
-After we have obtained samples (a_s, b_s, c_s) using CRS, we can take advnatage of the marginal information (f_1, f_2, i.e., lengths of the original postings) to solve a maximum likelihood equation which is a cubic equation and can be approximated as a quadratic equation: 
+After we have obtained samples (a_s, b_s, c_s) using CRS, we estimate the original intersection a, by taking advnatage of the marginal information (f_1, f_2, i.e., lengths of the original postings) to solve a maximum likelihood equation which is a cubic equation and can be approximated as a quadratic equation: 
 
 <img src="img/EMNLP2005.png" width="500"/> 
 
