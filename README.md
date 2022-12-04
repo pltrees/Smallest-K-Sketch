@@ -8,14 +8,16 @@ The drawback of this scheme is that the sample size differs for each pair (group
 
 ## The sampling procedure
 
-<img src="img/NIPS2006.png" width="400"/> 
+<img src="img/NIPS2006.png" width="800"/> 
 
 
-## The qudratic estimation formula (approximate MLE) for binary data. 
+## The quadratic estimation formula (approximate MLE) for binary data
 
-<img src="img/EMNLP2005.png" width="400"/> 
+After we have obtained samples (a_s, b_s, c_s) using CRS, we can take advnatage of the marginal information (f_1, f_2, i.e., lengths of the original postings) to solve a maximum likelihood equation which is a cubic equation and can be approximated as a quadratic equation: 
 
-It is provably more accurate than the standard min-wise hashing estimator, very substantially so when data are un-balanced, i.e., one original posting is substantially shorter than the other. 
+<img src="img/EMNLP2005.png" width="500"/> 
+
+The above estimator is provably more accurate than the standard min-wise hashing estimator, very substantially so when data are un-balanced, i.e., one original posting is substantially shorter than the other. 
 
 # 2005 Words Dataset
 The Words dataset contains 2,702 samples, and each instance is a word count in 2^16 different documents. In the other word, each data point is a 2^16 dimensional vector representing the number of occurrences of an English word in a repository of 2^16 documents. 
