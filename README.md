@@ -1,6 +1,6 @@
 # Conditional Random Sampling (CRS), a.k.a. Smallest-K Sketch 
 
-This line of work was started in 2004 at Microsoft Research. One main application is to sample from the inverted indexes (postings). 
+This line of work was started in 2004 at Microsoft Research. One obvoius application is to sample from the inverted indexes (postings). 
 
 For sparse data, the inverted index is routinely used. To improve efficiency and storage, we directly sample the front of each inverted index vector, hence the name "Small-K Sketch" although the "K" does not need to be the same for each vector. In the estimation stage, for any pair (or any group) of sketches, we can retrospectively construct a uniform random sample for that pair (or group). With a random sample, one can use it to compute any similarities and summary statistics. Therefore, it is a "one-sketch-for-all" scheme. 
 
@@ -19,14 +19,14 @@ After we have obtained samples (a_s, b_s, c_s) using CRS, we estimate the origin
 
 The above estimator (initially appeared in EMNLP 2005) is provably more accurate than the standard min-wise hashing estimator, very substantially so when data are un-balanced, i.e., one original posting is substantially shorter than the other. 
 
-# 2005 Words Dataset
+# The 2005 Words Dataset
 The Words dataset contains 2,702 samples, and each instance is a word count in 2^16 different documents. In the other word, each data point is a 2^16 dimensional vector representing the number of occurrences of an English word in a repository of 2^16 documents. 
 The word vectors are in the zipped file `words.zip`. Each file is a word vector in a two-column sparse representation: the first column is the vector value (the number of occurrences) and the second column is the vector index.
 
 ## Reference for the Words dataset
 * Ping Li and Kenneth Church. [Using Sketches to Estimate Associations](https://aclanthology.org/H05-1089.pdf). EMNLP 2005.
 
-## Recent Papers which used this dataset
+## Recent Papers which used the 2005 Words dataset
 * Xiaoyun Li and Ping Li. [C-MinHash: Improving Minwise Hashing with Circulant Permutation](https://proceedings.mlr.press/v162/li22m/li22m.pdf). ICML 2022.
 * Xiaoyun Li and Ping Li. [Rejection Sampling for Weighted Jaccard Similarity Revisited](https://ojs.aaai.org/index.php/AAAI/article/view/16543/16350). AAAI 2021.
 
