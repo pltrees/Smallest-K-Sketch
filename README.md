@@ -17,7 +17,7 @@ After we have obtained samples (a_s, b_s, c_s) using CRS, we estimate the origin
 
 <img src="img/EMNLP2005.png" width="500"/> 
 
-The above estimator is provably more accurate than the standard min-wise hashing estimator, very substantially so when data are un-balanced, i.e., one original posting is substantially shorter than the other. 
+The above estimator (initially appeared in EMNLP 2005) is provably more accurate than the standard min-wise hashing estimator, very substantially so when data are un-balanced, i.e., one original posting is substantially shorter than the other. 
 
 # 2005 Words Dataset
 The Words dataset contains 2,702 samples, and each instance is a word count in 2^16 different documents. In the other word, each data point is a 2^16 dimensional vector representing the number of occurrences of an English word in a repository of 2^16 documents. 
