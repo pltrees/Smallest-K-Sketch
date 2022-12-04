@@ -15,7 +15,7 @@ The drawback of this scheme is that the sample size differs for each pair (group
 
 After we have obtained samples (a_s, b_s, c_s) using CRS, we estimate the original intersection a, by taking advnatage of the marginal information (f_1, f_2, i.e., lengths of the original postings) to solve a maximum likelihood equation which is a cubic equation and can be approximated as a quadratic equation: 
 
-<img src="img/EMNLP2005.png" width="500"/> 
+<img src="img/EMNLP2005.png" width="600"/> 
 
 The above estimator (initially appeared in EMNLP 2005) is provably more accurate than the standard min-wise hashing estimator, very substantially so when data are un-balanced, i.e., one original posting is substantially shorter than the other. 
 
